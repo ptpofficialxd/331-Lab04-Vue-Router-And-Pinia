@@ -7,9 +7,10 @@
 <style>
 @media (min-width: 1024px) {
   .about {
-    min-height: 100vh;
+    min-height: 70vh;
     display: flex;
-    align-items: center;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
   }
 }
 </style>

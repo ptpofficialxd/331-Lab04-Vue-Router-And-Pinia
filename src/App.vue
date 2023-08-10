@@ -14,8 +14,10 @@ const { message } = storeToRefs(store)
       <h4>{{ message }}</h4>
     </div>
     <nav>
-      <RouterLink :to="{ name: 'event-list' }">Home</RouterLink>
-      <RouterLink :to="{ name: 'about' }">About</RouterLink>
+      <RouterLink class="link" :to="{ name: 'event-list' }">Home</RouterLink>
+      <RouterLink class="link" :to="{ name: 'about' }">About</RouterLink>
+      <RouterLink class="link" :to="{ name: 'organizer' }">Organizer</RouterLink>
+      <RouterLink class="link" :to="{ name: 'student' }">Student</RouterLink>
     </nav>
   </header>
   <RouterView />
@@ -28,6 +30,10 @@ const { message } = storeToRefs(store)
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+
+.link {
+  margin-right: 10px;
 }
 
 nav {

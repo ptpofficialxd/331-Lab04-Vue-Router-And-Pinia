@@ -50,6 +50,7 @@ const hasNextPage = computed(() => {
   return props.page.valueOf() < totalPages
 })
 
+
 </script> 
 
 <template>
